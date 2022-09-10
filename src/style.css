@@ -1,0 +1,42 @@
+.login-dialog-mask {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+
+  background: rgba(0, 0, 0, 0.5);
+}
+
+.login-dialog {
+  width: 20rem;
+  height: 12.5rem;
+
+  margin-left: auto;
+  margin-top: auto;
+  margin-right: auto;
+  margin-bottom: auto;
+
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+
+  z-index: 5;
+}
+
+.login-dialog input[type="text"] {
+  margin: 2rem;
+  height: 2rem;
+
+  font-size: 16pt;
+}
+
+.login-dialog input[type="button"] {
+  margin: auto 2rem 2rem 2rem;
+  font-size: 16pt;
+}
+
+.hidden {
+  display: none;
+}
