@@ -12,6 +12,8 @@ const refreshLiveClock = function () {
   const second = currentDateTime.getSeconds();
 
   liveClockView.innerHTML = `${year}-${month}-${day} ${hour}:${minute}:${second}`;
+
+  setInterval(refreshLiveClock, 1000);
 };
 
 refreshLiveClock();
