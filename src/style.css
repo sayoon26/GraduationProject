@@ -1,3 +1,9 @@
+body {
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
 .login-dialog-mask {
   position: absolute;
   left: 0;
