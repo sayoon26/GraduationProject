@@ -6,11 +6,13 @@ const geolocationOK = function (position) {
   const lat = position.coords.latitude;
   const lon = position.coords.longitude;
 
+  weatherView.textContent = "날씨 정보 가져오는 중...";
+
   fetch(
-    `https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&appid=${apiKey}`
+    `https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&appid=${apiKey}&units=metric&lang=kr`
   ).then(function (response) {
     response.json().then(function (data) {
-      // API 호출 정상적으로 되면 나중에 다시 보자
+      weatherView.textContent = `${data.name} ${data.sys.country} / ${data.main.temp}℃ ${data.weather[0].description}`;
     });
   });
 };
