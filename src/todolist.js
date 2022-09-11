@@ -23,7 +23,7 @@ const renderTodoList = function () {
 
   todoListView.innerHTML = "";
 
-  for (var i = 0; i < todoList.length; i++) {
+  for (let i = 0; i < todoList.length; i++) {
     const todoItem = document.createElement("div");
 
     todoItem.className = "todo-item";
