@@ -110,6 +110,8 @@ const todoSubmitHandler = function () {
   }
 
   appendTodoList(todoContent);
+
+  todoInput.value = "";
 };
 
 todoSubmit.addEventListener("click", todoSubmitHandler);
