@@ -36,6 +36,10 @@ const renderTodoList = function () {
       checkButton.classList.add("checked");
     }
 
+    checkButton.addEventListener("click", function () {
+      tickTodoList(i, !todoList[i].checked);
+    });
+
     todoItem.appendChild(checkButton);
 
     const textView = document.createElement("div");
